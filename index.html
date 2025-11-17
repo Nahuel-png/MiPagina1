@@ -1,163 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="Css/styles.css">
-    <script src="./js/index.js"></script>
-    <script src="https://kit.fontawesome.com/5e3608e689.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title> Hosteleria S.A</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostelería S.A</title>
+
+ 
+  <link rel="stylesheet" href="Css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+ 
+  <script src="https://kit.fontawesome.com/5e3608e689.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-   <header>
-     <nav>
-      <ul class="nav-list">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="#">Acerca de</a></li>
-<li><a href="#">Servicios</a></li>
-<li><a href="pages/contacto.html">Contacto</a></li>
-<li><a href="#">Reseñas</a></li>
-</ul>
-      </nav>
+  <header>
+    <a href="./pages/carrito.html" class="carrito-icono">
+          🛒 <span id="contador-carrito" class="contador">0</span>
+        </a>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="pages/contacto.html">Contacto</a></li>
+      <li><a href="#">Reseñas</a></li>
+      <li>
+       
+      </li>
+    </ul>
+  </nav>
     <div class="cen">
-    <img src="img/logo.png" alt="cen" width="300" height="270">
+      <img src="img/logo.png" alt="Logo de Hostelería" width="300" height="270" />
     </div>
-  <h1>Hosteleria</h1>
-</header>
-<main>  
+    <h1>Hostelería</h1>
+  </header>
 
-    <section>   
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4_lzrprot5U?si=QkYDuW46KiIK_NdT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<img src="img/playa.jpg" alt="" width="300" height="270">
+  <main>
+    <section>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4_lzrprot5U?si=QkYDuW46KiIK_NdT" title="Video institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <img src="img/playa.jpg" alt="Vista de la playa" width="300" height="270" />
     </section>
- 
-  
-<form
-  action="https://formspree.io/f/xkgvarao"
-  method="POST"
->
 
-    <label for="nombre">Nombre:</label>
-     <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
-  <label>
-    Ingrese su email:
-    <input type="email" id="email" name="email" placeholder="Correo@gmail.com" required><br>
-  </label>
-  <label>
-    Ingrese su mensaje:
-     <textarea id="mensaje" name="mensaje" rows="4" cols="50"  placeholder="Mensaje" required></textarea>
-  </label>
-  
-  <button type="submit">Enviar</button>
-</form>
- <div class="centrar">  
- <table   border="1">
-   <caption>Mensajes ya respondidos</caption>
-   <thead>
-      <tr>
-         <th >Nombre</th>
-         <th >Email</th>
-         <th >Mensaje</th>
-         
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td >Tomas</td>
-         <td >Tomo@gmail.com</td>
-         <td >Hay descuento por pagar en efectivo?</td>
-      </tr>
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form action="https://formspree.io/f/xkgvarao" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
 
-      <tr>
-         <td >Pedro</td>
-         <td >Pedro@hotmail.com</td>
-         <td>Tienen ofertas de verano?</td>
-      </tr>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="correo@gmail.com" required />
 
-      <tr>
-         <td >Ana</td>
-         <td >Ana@gmail.com</td>
-         <td>Precios de las habitaciones?</td>
-      </tr>
-   </tbody>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escriba su mensaje aquí" required></textarea>
 
-   </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
-</table>
-<table border="1">
-<caption>Mensajes pendientes</caption>
-   <thead>
-      <tr>
-         <th >Nombre</th>
-         <th >Email</th>
-         <th >Mensaje</th>
-         
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td >Roberto</td>
-         <td >Roberto@gmail.com</td>
-         <td >Se puede pagar en cuotas?</td>
-      </tr>
+    <section class="centrar">
+      <h2>Mensajes ya respondidos</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Mensaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tomas</td><td>Tomo@gmail.com</td><td>¿Hay descuento por pagar en efectivo?</td></tr>
+          <tr><td>Pedro</td><td>Pedro@hotmail.com</td><td>¿Tienen ofertas de verano?</td></tr>
+          <tr><td>Ana</td><td>Ana@gmail.com</td><td>¿Precios de las habitaciones?</td></tr>
+        </tbody>
+      </table>
 
-      <tr>
-         <td >Fernandez</td>
-         <td>Fernandez@gmail.com</td>
-         <td >Hay oferas para 2 personas?</td>
-      </tr>
+      <h2>Mensajes pendientes</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Mensaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Roberto</td><td>Roberto@gmail.com</td><td>¿Se puede pagar en cuotas?</td></tr>
+          <tr><td>Fernandez</td><td>Fernandez@gmail.com</td><td>¿Hay ofertas para 2 personas?</td></tr>
+          <tr><td>Elias</td><td>Elias@gmail.com</td><td>¿Incluye desayuno continental?</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-      <tr>
-         <td >Elias</td>
-         <td >Elias@gmail.com</td>
-        <td >Incluye desayuno continental?</td>
-      </tr>
-   </tbody>
-</table>
-</div>
-<h2>PRODUCTOS</h2>
-<div id="main-container"></div>
-<section class="grid-productos">
- 
-     </main> 
-     
+    <section>
+      <h2>Productos</h2>
+      <div id="main-container"></div>
+      <section class="grid-productos">
+   
+      </section>
+    </section>
+
+    <section>
      <div class="h3"><h3>RESEÑAS</h3></div>
-     <section class="reseñas">  
-<section class="card">Pablo
-     <img  width="40" height="30" src="img/usuario.png">   <p>Excelentes tiempos de respuesta</p>
-</section>
-
-    <section class="card">Pedro
-     <img  width="40" height="30" src="img/usuario.png">   <p>Mejorar tiempos de respuesta</p>
-
-
-
+      <div class="reseñas">
+        <div class="card">
+          <strong>Pablo</strong>
+          <img src="img/usuario.png" alt="Usuario Pablo" width="40" height="30" />
+          <p>Excelentes tiempos de respuesta</p>
+        </div>
+        <div class="card">
+          <strong>Pedro</strong>
+          <img src="img/usuario.png" alt="Usuario Pedro" width="40" height="30" />
+          <p>Mejorar tiempos de respuesta</p>
+        </div>
+        <div class="card">
+          <strong>Carla</strong>
+          <img src="img/usuario.png" alt="Usuario Carla" width="40" height="30" />
+          <p>Precios accesibles con gran variedad de artículos</p>
+        </div>
+        <div class="card">
+          <strong>Lucas</strong>
+          <img src="img/usuario.png" alt="Usuario Lucas" width="40" height="30" />
+          <p>Excelente atención al cliente, recomendado</p>
+        </div>
+      </div>
     </section>
-    <section class="card">Carla
- <img  width="40" height="30" src="img/usuario.png"><p>Precios accesibles con gran variedad de articulos</p>
+  </main>
 
+  <footer>
+    <p>© 2025 Hostelería S.A</p>
+    <div class="redes">
+      <a href="#"><img src="img/facebico.png" alt="Facebook" width="100" height="100" /></a>
+      <a href="#"><img src="img/instaico.jpg" alt="Instagram" width="100" height="100" /></a>
+      <a href="#"><img src="img/twitico.png" alt="Twitter" width="100" height="100" /></a>
+    </div>
+  </footer>
 
-    </section>
-<section class="card">Lucas
- <img  width="40" height="30" src="img/usuario.png"><p>Excelente atencion al cliente, recomendado</p>
-</section>
-</section>
-<footer>
-    
-<p>2025 #Copyrights<br>
-<a href="#">          
-    <img  src="img/facebico.png" alt=""  width="100" height="100"></a>
-    <a href="#"><img src="img/instaico.jpg" alt="" width="100" height="100"></a>
-    <a href="#"><img src="img/twitico.png" alt="" width="100" height="100"></a>
-</p>
-
-
-
-</footer>
-</main>
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito | Hostelería S.A</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../Css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/5e3608e689.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+        <a href="./carrito.html" class="carrito-icono">
+            🛒 <span id="contador-carrito" class="contador">0</span>
+          </a>
+      <ul class="nav-list">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="#">Reseñas</a></li>
+        <li>
+          
+        </li>
+      </ul>
+    </nav>
+    <div class="cen">
+      <img src="../img/logo.png" alt="Logo de Hostelería" width="300" height="270" />
+    </div>
+    <h1>Carrito de compras</h1>
+  </header>
+
+  <main>
+    <section id="contenedor-carrito">
+      <!-- Aquí se renderizan los productos del carrito -->
+    </section>
+
+    <div id="acciones-carrito" class="acciones-carrito">
+      <!-- Botón para vaciar el carrito se agrega desde JS -->
+    </div>
+
+    <section id="resumen-carrito">
+      <!-- Si en el futuro querés mostrar el total, podés usar esta sección -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hostelería S.A</p>
+    <div class="redes">
+      <a href="#"><img src="../img/facebico.png" alt="Facebook" width="100" height="100" /></a>
+      <a href="#"><img src="../img/instaico.jpg" alt="Instagram" width="100" height="100" /></a>
+      <a href="#"><img src="../img/twitico.png" alt="Twitter" width="100" height="100" /></a>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/carrito.js"></script>
+</body>
+</html>

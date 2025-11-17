@@ -149,6 +149,7 @@ nav{
 
 
 }
+
 header{
 
 color:rgb(0, 0, 0);
@@ -257,4 +258,72 @@ grid-template-columns: 1fr;
 
   font-size: 2.5rem;
 text-align: center;
+}
+
+.btn {
+  background-color: #1fd26a;
+  color: #e5e6e8;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #b2c58e;
+}
+
+.btn-eliminar-carrito {
+  background-color: #648f15;
+  border: 2px solid #ecf7f0;
+}
+.btn-vaciar-carrito {
+  background-color: #e0cd60;
+  color: #1d1a20;
+}
+.btn-vaciar-carrito:hover {
+  background-color: #bb600a;
+}
+
+.mensaje-carrito-vacio {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.acciones-carrito {
+  margin-top: 2rem;
+}
+.carrito-icono {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 2px solid rgb(231, 235, 11);;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carrito-icono:hover {
+  background-color: rgb(231, 235, 11);
+  color: white;
+  transform: scale(1.05);
+}
+
+.contador {
+  background-color: rgb(231, 235, 11);;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 0.8rem;
 }

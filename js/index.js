@@ -1,3 +1,7 @@
+import { agregarAlCarrito } from "./funcionesCarrito.js";
+import { actualizarContador } from "./ui.js";
+import { obtenerCarrito } from "./storage.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const arrayHabitaciones = [
     {
@@ -21,9 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const mainContainer = document.getElementById("main-container");
-
   const contenedor = document.createElement("section");
   contenedor.classList.add("grid-productos");
+
+  const carrito = obtenerCarrito();
+  actualizarContador(carrito);
 
   arrayHabitaciones.forEach((habitacion) => {
     const producto = document.createElement("div");
@@ -41,18 +47,18 @@ document.addEventListener("DOMContentLoaded", () => {
     descripcion.textContent = habitacion.descripcion;
 
     const precio = document.createElement("p");
-    precio.textContent = `Precio: $${habitacion.precio}`;
+    precio.textContent = `Precio: $${habitacion.precio.toLocaleString("es-AR")}`;
 
     const boton = document.createElement("button");
-    boton.type = "submit";
+    boton.type = "button";
     boton.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> Agregar al carrito`;
 
-    producto.appendChild(imagen);
-    producto.appendChild(titulo);
-    producto.appendChild(descripcion);
-    producto.appendChild(precio);
-    producto.appendChild(boton);
+    
+    boton.addEventListener("click", () => {
+      agregarAlCarrito(habitacion);
+    });
 
+    producto.append(imagen, titulo, descripcion, precio, boton);
     contenedor.appendChild(producto);
   });
 
